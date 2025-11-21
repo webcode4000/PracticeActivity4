@@ -1,0 +1,105 @@
+h1 {
+    border-style: double;
+    border-color: blue;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+h2, h3 { 
+    color: navy; 
+    font-size: 30px; 
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif; 
+    font-style: italic;
+}
+
+body {
+    text-align: center; 
+    background-color: rgb(216, 239, 247);
+}
+
+img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+h1, h2, h3 { 
+    margin-bottom: 20px; 
+}
+#collection-description {
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+    margin: 100px;
+    color: #333; 
+}
+
+#price-list {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    list-style-type: none; 
+}
+
+#price-list li {
+    margin: 5px 0; 
+}
+
+
+.animated-title {
+    opacity: 0; 
+    animation: flash 4s infinite; 
+    color: #3498db;
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0; 
+        color: #3498db; 
+    }
+    50% {
+        opacity: 1; 
+        color: #e74c3c; 
+    }
+    100% {
+        opacity: 0; 
+        color: #3498db; 
+    }
+}
+
+.vintage-frame {
+    border: 7px solid #62300c; 
+    border-radius: 4px; 
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.5); 
+    padding: 5px; 
+    background-color: #b8aeae; 
+    
+}
+
+.vintage-frame img {
+    width: 100%; 
+    border-radius: 10px; 
+}
+
+.unique-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px; 
+}
+
+.unique-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}

@@ -1,0 +1,159 @@
+/*Here is where I applied the required elements:
+1. Content-2 includes a sephia filter, a brightness filter, and a contrast filter.
+2. The Sidebar includes a rotate transform element and a scale transform element.
+3. Footer includes an animation called slideInColor where the text slides in and out and changes color. */
+
+body {
+    margin: 20px;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar content-1 content-1"
+    "sidebar content-2 content-3"
+    "footer footer footer";
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: auto 1 fr 1 fr auto;
+    gap: 15px;
+    height: 600px;
+    
+}
+.header {
+    grid-area: header;
+    background-color: aliceblue;
+    padding: 10px;
+    color: darkblue;
+   /* font-size: 45px;*/
+    text-align: center;
+}
+.headertext {
+    font-size: 45px;
+    margin: 0px;
+}
+.subheader {
+    font-size: 17px;
+    color: Navy;
+    margin: 5px 0;
+   
+}
+/* Getting the spacing in between grid elements was a challenging for me 
+and required a lot of trial and error */
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: antiquewhite; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+@keyframes spin {
+    0% {
+       transform:rotateY(0deg);
+    }
+       40% {
+        transform: RotateY(180deg);
+       }
+       60% {
+        transform: rotateY(180deg);
+       }
+    
+   100% {
+       transform: rotateY(360deg);
+    }
+}
+.sidebar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    animation: spin 17s linear infinite;
+    transform: rotate(0deg);
+    transition: transform .5s ease;
+    border: 5px solid transparent;
+}
+.sidebar img:hover {
+    transform: rotate(10deg) scale(1.1);
+    border: 5px solid mediumaquamarine;
+}
+.content-1 {
+    grid-area: content-1;
+    background-color: lightcyan; 
+    padding: 0px;
+    height: 100%;
+
+}
+.content-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    display: block;
+
+}
+.content-2 {
+    grid-area: content-2;
+     background-color: lightsteelblue; 
+    padding: 0px;
+}
+.content-2 img {
+    filter:sepia(45%) brightness(110%) contrast(120%);
+    transition: filter 1s;
+
+}
+.content-2 img:hover {
+    filter: sepia(0%) brightness(100%) contrast(100%);
+}
+
+.content-3 {
+    grid-area: content-3;
+     background-color: lightgoldenrodyellow; 
+    padding: 0px;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes slideInColor {
+    50% {
+        opacity: 50%;
+        transform: translateY(50px);
+        color: navajowhite;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        color: darkblue;
+
+    }
+}
+.footer {
+    grid-area: footer;
+    background-color:lightseagreen;
+    color: darkblue;
+    text-align: center;
+    padding: 30px;
+    font-family: cursive;
+    font-size: 30px;
+    font-style: italic;
+}
+.footer p {
+    margin: 0;
+}
+.footertext {
+    animation: slideInColor 8s ease-in infinite;
+    padding-bottom: 0;
+    margin:0;
+}
+.footertext2 {
+    font-family:monospace;
+    font-size: 17px;
+    color:lightgoldenrodyellow;
+    text-align: center;
+    padding-top: 0px;
+    margin: 0;
+}

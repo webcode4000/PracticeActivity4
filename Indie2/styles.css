@@ -1,0 +1,161 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: blue;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+header {
+   color: blue;
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 600;
+   font-size: 55px;
+   text-shadow: 3;
+   padding: 5px 0;
+   margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.albumcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.album {
+    background: lightcyan;
+    border: 2px solid mediumslateblue;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform .5s, margin .5s;
+    width:225px;
+}
+.album:hover {
+    transform: scale(1.1) translateY(10px);
+    box-shadow: 0 4px 16px mediumblue;
+
+}
+.hovermessage {
+    display:none;
+    position: absolute;
+    bottom: -15%;
+    color:rgb(255, 182, 46);
+    text-align: center;
+}
+
+.album:hover .hovermessage {
+    display:block;
+}
+
+.albumimage {
+    max-width: 175px;
+    max-height: 175px;
+   
+
+}
+.tablecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    text-align: center;
+}
+.about-image {
+    position: relative;
+    width: 225px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 42px;
+    box-shadow: 0 4px 8px darkblue;
+    transition: transform .5s, box-shadow .5s;
+}
+span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, courier;
+  line-height: 80%;
+}
+.aboutpage h1 {
+    font-size: 38px;
+    color: #ff6a00;
+    text-align: center;
+    text-shadow: 2px 2px 4px mediumblue;
+    margin: 1px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aboutpage p {
+    font-size: 18px;
+    margin: 20px auto;
+    line-height: 1.8;
+    max-width: 800px;
+}
+.advertisement {
+    position: absolute;
+    right: 93px;
+    top: 239px;
+    width: 214px;
+    background-color: aqua;
+    box-shadow: 0 8px 16px rgb(8, 16, 161);
+    padding: 17px;
+    border-radius: 8px;
+    transition: transform .5s, box-shadow .5s;
+    z-index: 10;
+}
+.advertisement:hover {
+    transform: scale(1.4);
+    box-shadow: 1px 8px 16px darkblue;
+}
+.aboutfooter {
+    margin-top: 150px;
+}
+.aboutfooter P {
+  
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:brown;
+   
+}
+
+footer {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    font-size: 11px;
+    color:brown;
+    text-align: center;
+}

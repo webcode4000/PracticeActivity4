@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>IST250 Lesson Five, Partner Lab 2</title>
+    <link rel="stylesheet" href="stylesL5PLab2.css">
+    <script src="scriptL5PLab2.js"></script>
+  </head>
+  <body>
+
+<a href="../pa4index.html">Back to Portfolio Main Page</a> 
+
+
+    <div class="content">
+<h1 id="updatedGreeting">Hello User, Welcome!</h1>
+
+    <img src="computercoding.jpg" width=500px height=350px "Computer with Code>
+
+    <br/>
+    
+    <p id="firstparagraph">Welcome to this page where we are learning how to link together <strong>html</strong>,
+        <strong>css</strong>, and <strong>javascript</strong>.</p>
+        
+
+      <br/>
+     <p>Please enter your name to personalize your greeting</p>
+      <p>
+     <label for="usersName">Please enter your name:</label>
+     <input type="text" id="usersName" placeholder="Your Name Here"/>
+      </p>
+      <br/>
+    <p>Please enter a brief message below to be displayed as your new greeting.</p>
+      <p>
+     <label for="enteredMessage">Please enter a brief greeting message:</label>
+     <input type="text" id="enteredMessage" placeholder="Your Message Here"/>
+      </p>
+    
+     <br/>
+
+    <p>Please select a page background color from the dropdown list:</p>
+
+    <select id="backgroundColor">
+      <option value="lightblue">Light Blue</option>
+      <option value="lightyellow">Light Yellow</option>
+      <option value="tan">Tan</option>
+    </select>
+
+       <br/>
+
+    <p>Click submit below to see your selected changes!</p>
+
+    <input type="button" value="Submit" onclick="customMessage();">
+    <p id="custombutton"></p>
+    </div>
+
+  </body>
+</html>

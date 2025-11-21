@@ -1,0 +1,35 @@
+   .content {
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px;
+}
+   h1 {
+      color: rgb(32, 0, 128);
+      background-color: lightgray;
+      padding: 5px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 33px;
+    text-align: center;
+    }
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 10px;
+     /* text-align: center; */
+    }
+    strong {
+      color:blue;
+      padding: 5px;
+    } 
+    #firstparagraph {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 17px;
+      color: blue;
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    
+    }
+    
